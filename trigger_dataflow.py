@@ -1,11 +1,11 @@
-import config
+import configs
 import requests
 import base64
 
-client_id = config.DATAOPS_CLIENT_ID
-client_secret = config.DATAOPS_CLIENT_SECRET
-username = config.DATAOPS_USERNAME
-password = config.DATAOPS_PASSWORD
+client_id = configs.DATAOPS_CLIENT_ID
+client_secret = configs.DATAOPS_CLIENT_SECRET
+username = configs.DATAOPS_USERNAME
+password = configs.DATAOPS_PASSWORD
 
 
 
