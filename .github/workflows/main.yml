@@ -3,7 +3,7 @@ name: Run Python Script
 on:
   push:
     paths:
-      -'src/config/settings.json'
+      -'Dataflow/S3_Parquet_Compare.json'
 
 jobs:
   run-python:
