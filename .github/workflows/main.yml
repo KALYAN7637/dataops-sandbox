@@ -1,9 +1,6 @@
 name: Run Python Script
 
-on:
-  push:
-    paths:
-      -'Dataflow/S3_Parquet_Compare.json'
+on: [push]
 
 jobs:
   run-python:
