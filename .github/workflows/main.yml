@@ -1,9 +1,7 @@
 name: Run Python Script
 
-on:
-  push:
-    paths:
-      -'src/config/settings.json'
+on: [push]
+
 
 jobs:
   run-python:
