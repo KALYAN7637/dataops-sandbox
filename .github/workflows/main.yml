@@ -1,6 +1,9 @@
 name: Run Python Script
 
-on: [push]
+on: 
+  push:
+    paths:
+      - 'Dataflow/Data Source'
 
 jobs:
   run-python:
