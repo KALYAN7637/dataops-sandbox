@@ -93,7 +93,7 @@ while True:
     print(f"DataFlow Status: {status}")
     if status in ["COMPLETED", "FAILED", "ERROR"]:
         break
-    time.sleep(50)
+    time.sleep(60)
 
 
 print(status)
