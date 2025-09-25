@@ -1,4 +1,4 @@
-import config
+import configs
 import requests
 import base64
 
