@@ -10,10 +10,10 @@ bearer_token=''
 
 def trigger_dataflow():
     global bearer_token
-    client_id = "dataopssuite-restapi-client"
-    client_secret = "BKG0@8lE"
-    username = "kalyanachakravarthi.nalam"
-    password = "U2FsdGVkX19YkV7mUR2pwpqZamUFWqi9CswGrFqywYw="
+    client_id = configs.DATAOPS_CLIENT_ID
+    client_secret = configs.DATAOPS_CLIENT_SECRET
+    username = configs.DATAOPS_USERNAME
+    password = configs.DATAOPS_PASSWORD
 
 
 
