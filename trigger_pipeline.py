@@ -6,7 +6,7 @@ import sys
 
 def trigger_pipeline():
     client_id = "dataopssuite-restapi-client"
-    client_secret = "xm7iHlNT"
+    client_secret = "BKG0@8lE"
     username = "kalyanachakravarthi.nalam"
     password = "U2FsdGVkX1/tZ3zs57MyKJYdNLK4cyijcKZo8VgnzEw="
     pipeline_id = "d5736b8538e34b768abcf6a1b0e4c4d0"
