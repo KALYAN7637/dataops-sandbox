@@ -11,7 +11,7 @@ def trigger_pipeline():
     password = "U2FsdGVkX1/tZ3zs57MyKJYdNLK4cyijcKZo8VgnzEw="
     pipeline_id = "d5736b8538e34b768abcf6a1b0e4c4d0"
 
-    auth_url = "https://poc.datagaps/dataopssecurity/oauth2/token"
+    auth_url = "https://poc.datagaps.com/dataopssecurity/oauth2/token"
     basic_auth_str = f"{client_id}:{client_secret}"
     base64_auth_str = base64.b64encode(basic_auth_str.encode()).decode()
 
@@ -34,7 +34,7 @@ def trigger_pipeline():
     access_token = response.json().get("access_token")
     print(" Authentication successful")
 
-    pipeline_url = "https://poc.datagaps/piper/jobs"
+    pipeline_url = "https://poc.datagaps.com/piper/jobs"
     pipe_headers = {
         "Authorization": f"Bearer {access_token}",
         "Content-Type": "application/json",
@@ -59,7 +59,7 @@ def trigger_pipeline():
 
 
 def pipeline_status(bearer_token, pipeline_run_id):
-    status_url = f"https://poc.datagaps/piper/jobs/{pipeline_run_id}/status"
+    status_url = f"https://poc.datagaps.com/piper/jobs/{pipeline_run_id}/status"
     headers = {
         "Authorization": f"Bearer {bearer_token}",
         "Content-Type": "application/json",
