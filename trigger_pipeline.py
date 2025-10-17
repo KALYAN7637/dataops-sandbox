@@ -95,4 +95,5 @@ final_status = pipeline_status(token, run_id)
 if final_status == "COMPLETED":
     sys.exit(0)
 else:
+    print(final_status)
     sys.exit(1)
