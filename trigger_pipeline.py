@@ -75,12 +75,12 @@ def pipeline_status(bearer_token, pipeline_run_id):
 
         try:
             data = response.json()
+            print(data)
         except json.JSONDecodeError:
             print("Failed to parse JSON response")
             sys.exit(1)
 
         status = data.get("status")
-        print(f"Pipeline Status: {status}")
 
         if status in ["COMPLETED", "FAILED", "ERROR"]:
             print(f" Pipeline finished with status: {status}")
@@ -91,6 +91,7 @@ def pipeline_status(bearer_token, pipeline_run_id):
 
 token, run_id = trigger_pipeline()
 final_status = pipeline_status(token, run_id)
+print(final_status)
 
 if final_status == "COMPLETED":
     sys.exit(0)
