@@ -11,7 +11,6 @@ def trigger_pipeline():
     password = "U2FsdGVkX1/tZ3zs57MyKJYdNLK4cyijcKZo8VgnzEw="
     pipeline_id = "dbff78cf-405f-4f56-b716-e7ecaa537783"
 
-    # --- Authentication ---
     auth_url = "http://192.168.6.205:6055/dataopssecurity/oauth2/token"
     basic_auth_str = f"{client_id}:{client_secret}"
     base64_auth_str = base64.b64encode(basic_auth_str.encode()).decode()
