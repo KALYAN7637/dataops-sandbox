@@ -9,7 +9,7 @@ def trigger_pipeline():
     client_secret = "BKG0@8lE"
     username = "kalyanachakravarthi.nalam"
     password = "U2FsdGVkX19DnXkf8W1HJBQqyyRhAeglYJZ08vg6YpU="
-    pipeline_id = "d5736b8538e34b768abcf6a1b0e4c4d0"
+    pipeline_id = "dbff78cf-405f-4f56-b716-e7ecaa537783"
 
     auth_url = "https://poc.datagaps.com/dataopssecurity/oauth2/token"
     basic_auth_str = f"{client_id}:{client_secret}"
@@ -32,6 +32,7 @@ def trigger_pipeline():
         sys.exit(1)
 
     access_token = response.json().get("access_token")
+    print(access_token)
     print(" Authentication successful")
 
     pipeline_url = "https://poc.datagaps.com/piper/jobs"
