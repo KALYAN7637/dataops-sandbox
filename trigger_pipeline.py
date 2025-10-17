@@ -8,7 +8,7 @@ def trigger_pipeline():
     client_id = "dataopssuite-restapi-client"
     client_secret = "BKG0@8lE"
     username = "kalyanachakravarthi.nalam"
-    password = "U2FsdGVkX1/7UYw/Lugg+VbucyFqi+58Qx1XeUI7g9A="
+    password = "U2FsdGVkX19DnXkf8W1HJBQqyyRhAeglYJZ08vg6YpU="
     pipeline_id = "d5736b8538e34b768abcf6a1b0e4c4d0"
 
     auth_url = "https://poc.datagaps.com/dataopssecurity/oauth2/token"
