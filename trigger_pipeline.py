@@ -9,7 +9,7 @@ def trigger_pipeline():
     client_secret = "BKG0@8lE"
     username = "kalyanachakravarthi.nalam"
     password = "U2FsdGVkX19DnXkf8W1HJBQqyyRhAeglYJZ08vg6YpU="
-    pipeline_id = "d5736b8538e34b768abcf6a1b0e4c4d0"
+    pipeline_id = "78c6e382-0066-48a4-8e7c-4175c9d34156"
 
     auth_url = "https://poc.datagaps.com/dataopssecurity/oauth2/token"
     basic_auth_str = f"{client_id}:{client_secret}"
