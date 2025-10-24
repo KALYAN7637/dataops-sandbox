@@ -3,12 +3,16 @@ import base64
 import time
 import json
 import sys
+import configs
+
+
+
 
 def trigger_pipeline():
-    client_id = "dataopssuite-restapi-client"
-    client_secret = "xm7iHlNT"
-    username = "kalyanachakravarthi.nalam"
-    password = "U2FsdGVkX1/tZ3zs57MyKJYdNLK4cyijcKZo8VgnzEw="
+    client_id = configs.DATAOPS_CLIENT_ID
+    client_secret = configs.DATAOPS_CLIENT_SECRET
+    username = configs.DATAOPS_USERNAME
+    password = configs.DATAOPS_PASSWORD
     pipeline_id = "dbff78cf-405f-4f56-b716-e7ecaa537783"
 
     auth_url = "http://192.168.6.205:6055/dataopssecurity/oauth2/token"
